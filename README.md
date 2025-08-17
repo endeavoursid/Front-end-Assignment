@@ -63,3 +63,8 @@ npm run storybook
 The component documentation is published live on Chromatic:  
 👉 [View Storybook](https://main--74a0f16-example.chromatic.com)
 
+# My Frontend Assignment
+
+Demo of components:
+
+![Demo](./public/Animation.gif)
