@@ -48,4 +48,18 @@ Clone the repo and install dependencies:
 git clone <your-repo-url>
 cd my-frontend-assignment
 npm install
+```
+
+## ▶ Run the Vite Development Server
+```bash
+npm run dev
+```
+## ▶ Run Storybook for Component Documentation
+```bash
+npm run storybook
+```
+## 📘 Storybook Documentation
+
+The component documentation is published live on Chromatic:  
+👉 [View Storybook](https://main--74a0f16-example.chromatic.com)
 
