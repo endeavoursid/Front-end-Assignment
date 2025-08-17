@@ -1,69 +1,66 @@
-# React + TypeScript + Vite
+# Frontend Assignment – React Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements **two reusable UI components** – `InputField` and `DataTable` – using **React, TypeScript, TailwindCSS, and Storybook**.  
+The components are scalable, accessible, and theme-aware (light/dark mode).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Components
 
-## Expanding the ESLint configuration
+### 🔹 InputField
+A reusable text input with multiple states, variants, and sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Features**
+- Label, placeholder, helper text, error message  
+- States: default, disabled, invalid, loading  
+- Variants: filled, outlined, ghost  
+- Sizes: small, medium, large  
+- Optional: clear button & password toggle  
+- 🌙 Dark mode supported  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Accessibility**
+- Uses `aria-invalid` and `aria-describedby`  
+- Fully keyboard & screen reader friendly  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔹 DataTable
+A flexible, accessible table for displaying structured data.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Features**
+- Configurable columns  
+- Row selection (single/multiple)  
+- Sorting by columns  
+- Loading & empty states  
+- 🌙 Dark mode supported  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Accessibility**
+- Semantic roles: `role="table"`, `role="row"`, `role="cell"`  
+- Checkboxes/radios are labeled for screen readers  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
+---
+
+## 🛠️ Setup
+
+Clone the repo and install dependencies:
+
+```bash
+git clone <your-repo-url>
+cd my-frontend-assignment
+npm install
+
+**Run the Vite development server:**
+
+npm run dev
+
+**Run Storybook for component documentation:**
+
+npm run storybook
+
+**## 📘 Storybook Documentation**
+
+The component documentation is published live on Chromatic:  
+👉 [View Storybook](https://<your-chromatic-project-url>)
+
 ])
 ```
