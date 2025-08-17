@@ -57,6 +57,8 @@ npm run dev
 
 npm run storybook
 
+---
+
 ## 📘 Storybook Documentation
 
 The component documentation is published live on Chromatic:  
