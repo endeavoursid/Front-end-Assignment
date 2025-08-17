@@ -57,10 +57,10 @@ npm run dev
 
 npm run storybook
 
-**## 📘 Storybook Documentation**
+## 📘 Storybook Documentation
 
 The component documentation is published live on Chromatic:  
-👉 [View Storybook](https://<your-chromatic-project-url>)
+👉 [View Storybook](https://www.chromatic.com/builds?appId=68a17ff07245cc53b64cca30)
 
 ])
 ```
