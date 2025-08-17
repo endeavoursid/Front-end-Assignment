@@ -61,7 +61,7 @@ npm run storybook
 ## 📘 Storybook Documentation
 
 The component documentation is published live on Chromatic:  
-👉 [View Storybook](https://main--74a0f16-example.chromatic.com)
+ [View Storybook](https://main--74a0f16-example.chromatic.com)
 
 # My Frontend Assignment
 
