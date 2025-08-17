@@ -49,11 +49,15 @@ git clone <your-repo-url>
 cd my-frontend-assignment
 npm install
 
-### ▶ Run the Vite development server
+---
+
+**## Running the project**
+
+**Run the Vite development server**
 ```bash
 npm run dev
 
-### ▶Run Storybook for component documentation:
+**Run Storybook for component documentation:**
 
 npm run storybook
 
