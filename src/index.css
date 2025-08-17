@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make sure root always has background + min height */
+html, body, #root, #storybook-root {
+  @apply min-h-screen transition-colors;
+}
+
+/* Default (light mode) */
+html, body {
+  @apply bg-white text-gray-900;
+}
+
+/* Dark mode */
+html.dark, body.dark, #root.dark, #storybook-root.dark {
+  @apply bg-gray-900 text-gray-100;
+}
